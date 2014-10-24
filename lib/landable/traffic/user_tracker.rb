@@ -4,7 +4,7 @@ module Landable
       def track
         load
         cookie
-        record_visit
+        record_visit unless do_not_track
       end
 
       def load
